@@ -1,0 +1,39 @@
+<?php 
+ session_start();
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    
+      <link rel="stylesheet" href="navbar.css">
+      <style>
+      h1  {
+        text-align: center;
+        margin: 50px;
+        color: red;
+      }
+
+     
+      
+      </style>
+</head>
+<body>
+  <ul>
+    <li><a href="C:/xampp/htdocs/test1loging/home.html">Home</a></li>
+    <!--<li><a href="#news">News</a></li>-->
+    <li style="float:right"><a href="signup.html">Signup</a></li>
+    <li style="float:right"><a href="loging.html">Login</a></li> 
+    <li style="float:right"><a href="#about">About</a></li>
+      
+  </ul>
+  <br/>
+
+      <h1>Hello! <?php echo $_SESSON["username"] = $uidExists["user_name"];?> </h1>
+      <h1>Welcome to my website</h1>
+      
+</body>
+</html>

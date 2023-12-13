@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        input[type=email], input[type=password], input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+    
+          .form-center {
+            display:flex;
+            justify-content: center;
+            }
+    
+                button {
+                    background-color: rgb(130, 130, 247);
+                    color: white;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    cursor: pointer;
+                    width: 100%;
+                    }
+    
+                button:hover {
+                opacity: 0.8;
+                }  
+                
+                p {
+                    float: right;
+                }
+                    </style> 
+        
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <!--<li><a href="#news">News</a></li>-->
+        <li style="float:right"><a href="signup.html">Signup</a></li>
+        <li style="float:right"><a href="loging.html">Login</a></li> 
+        <li style="float:right"><a href="#">About</a></li>
+      </ul><br/>
+      
+
+      <form action="signup.php" method="post"> 
+        <div class="form-center">    
+       <div class="container"> 
+        <label for="uname"><b>User name</b></label><br>
+       <input type="text" name="uname" id="uname" placeholder="User name" > 
+       <br> 
+       
+       <label for="email"><b>Email</b></label><br>
+       <input type="email" name="email" id="email" placeholder="Email" > 
+       <br>    
+       <label for="password"><b>Password</b></label><br>
+       <input type="password" name="pwd" id="pwd" placeholder="Password" >
+       <br>
+
+       <label for="prepeat"><b>Repeat Password</b></label><br>
+       <input type="password" name="prepeat" id="prepeat" placeholder="Repeat Password" >
+       <br>
+       <button type="submit" name = "submit" >Signup</button> 
+       <br>
+       <input type="checkbox" value="T" > <b>Remember me </b>
+       <p><b>have account? <a href="loging.html">Loging</a></b></p>
+       </div>
+        </div>
+
+</body>
+</html>
